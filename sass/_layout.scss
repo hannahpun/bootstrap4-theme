@@ -4,3 +4,39 @@
     width: 115px;
     height: 20px;
 }
+
+// button
+.btn-main{
+    @include button-variant(#fff, $secondary, $secondary);
+}
+.btn-accent{
+    font-size: 1rem;
+    @include button-variant(#FFE180, transparent, #FFE180);
+}
+
+.banner{
+    width: 100%;
+}
+
+.card-link{
+    span[class^="icon-"]{
+        font-size: 2rem;
+    }
+    + .card-link{
+        margin-left: 0;
+    }
+}
+
+// bg-primary text-white
+.card{
+    position: relative;
+}
+.item-tag{
+    color: $white;
+    background-color: $primary;
+    position: absolute;
+    padding: 15px 10px;
+    writing-mode: vertical-lr;
+    left: 20px;
+    letter-spacing: 5px;
+}
